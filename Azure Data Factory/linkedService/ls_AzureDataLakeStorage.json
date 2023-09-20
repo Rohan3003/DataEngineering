@@ -1,0 +1,13 @@
+{
+	"name": "ls_AzureDataLakeStorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This Linked Service is used to connect to azure storage Data Lake",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://devstoragerohan.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDM0QjBFOUQwLTBDMDQtNDk1Ni1CQTJBLTNFODdDQTY2QjdCMF80YTk1NmRkMy1iMTNiLTQ1M2QtYTNhZC1lNzg1ODY5YjU2YjUiDQp9"
+		}
+	}
+}
