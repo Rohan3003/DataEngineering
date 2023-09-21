@@ -1,17 +1,6 @@
 {
 	"name": "pl_covid_reporting",
 	"properties": {
-		"activities": [
-			{
-				"name": "Wait1",
-				"type": "Wait",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 1
-				}
-			}
-		],
 		"folder": {
 			"name": "Projects"
 		},
