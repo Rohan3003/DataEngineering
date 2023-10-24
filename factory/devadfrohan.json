@@ -1,0 +1,9 @@
+{
+	"name": "devadfrohan",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "71d3d1c7-c9c6-4083-a2e9-434bfd8e2e10",
+		"tenantId": "fd41ee0d-0d97-4102-9a50-c7c3c5470454"
+	}
+}
