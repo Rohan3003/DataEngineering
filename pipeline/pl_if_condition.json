@@ -8,10 +8,6 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"expression": {
-						"value": "@contains(variables('file_name'),'test_file_name' )",
-						"type": "Expression"
-					},
 					"ifFalseActivities": [
 						{
 							"name": "Wait False",
@@ -37,9 +33,9 @@
 				}
 			}
 		],
-		"variables": {
+		"parameters": {
 			"file_name": {
-				"type": "String"
+				"type": "string"
 			}
 		},
 		"folder": {
