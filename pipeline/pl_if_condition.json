@@ -40,7 +40,7 @@
 		"parameters": {
 			"file_exists": {
 				"type": "string",
-				"defaultValue": "true"
+				"defaultValue": "false"
 			}
 		},
 		"folder": {
