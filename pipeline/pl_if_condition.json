@@ -39,8 +39,7 @@
 		],
 		"parameters": {
 			"file_exists": {
-				"type": "string",
-				"defaultValue": "false"
+				"type": "string"
 			}
 		},
 		"folder": {
