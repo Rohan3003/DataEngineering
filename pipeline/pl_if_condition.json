@@ -6,7 +6,12 @@
 				"name": "If Condition1",
 				"type": "IfCondition",
 				"dependsOn": [],
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "user_properties_defined ",
+						"value": "Now you are running the first user properties."
+					}
+				],
 				"typeProperties": {
 					"expression": {
 						"value": "@bool(pipeline().parameters.file_exists)",
