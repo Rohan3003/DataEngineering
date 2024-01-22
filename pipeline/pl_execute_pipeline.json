@@ -1,0 +1,29 @@
+{
+	"name": "pl_execute_pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "pl_execute_pipeline_main",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_child_execute_pipeline",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"folder": {
+			"name": "General Activity"
+		},
+		"annotations": [
+			"general"
+		]
+	}
+}
