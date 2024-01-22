@@ -50,6 +50,8 @@
 		"folder": {
 			"name": "General Activity"
 		},
-		"annotations": []
+		"annotations": [
+			"general"
+		]
 	}
 }

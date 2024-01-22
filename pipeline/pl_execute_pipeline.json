@@ -1,0 +1,25 @@
+{
+	"name": "pl_execute_pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"folder": {
+			"name": "General Activity"
+		},
+		"annotations": [
+			"general"
+		]
+	}
+}

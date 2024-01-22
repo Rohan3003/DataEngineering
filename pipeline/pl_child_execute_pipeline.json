@@ -1,0 +1,27 @@
+{
+	"name": "pl_child_execute_pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait child pipeline",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [
+					{
+						"name": "time duration",
+						"value": "10"
+					}
+				],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
+			}
+		],
+		"folder": {
+			"name": "General Activity"
+		},
+		"annotations": [
+			"general"
+		]
+	}
+}
