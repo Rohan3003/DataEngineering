@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "pl_notebook",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/rohan.srivastwa@motifworks.com/adf_notebook_activity"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_databrickds",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
