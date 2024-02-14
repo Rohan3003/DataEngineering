@@ -1,10 +1,10 @@
 {
-	"name": "pl_notebook",
+	"name": "pl_copy_data",
 	"properties": {
 		"activities": [
 			{
-				"name": "pl_notebook",
-				"type": "DatabricksNotebook",
+				"name": "Copy data Activity",
+				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -15,14 +15,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/rohan.srivastwa@motifworks.com/adf_notebook_activity"
-				},
-				"linkedServiceName": {
-					"referenceName": "LS_databrickds",
-					"type": "LinkedServiceReference"
+					"enableStaging": false
 				}
 			}
 		],
+		"folder": {
+			"name": "General Activity"
+		},
 		"annotations": []
 	}
 }
