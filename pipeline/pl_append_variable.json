@@ -1,0 +1,17 @@
+{
+	"name": "pl_append_variable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append variable Activityq",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
+		"folder": {
+			"name": "General Activity"
+		},
+		"annotations": []
+	}
+}

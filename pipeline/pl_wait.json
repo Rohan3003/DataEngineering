@@ -1,0 +1,21 @@
+{
+	"name": "pl_wait",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait Activity",
+				"description": "This activity makes the pipeline for specific duration and then it gets executed.",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
+			}
+		],
+		"folder": {
+			"name": "General Activity"
+		},
+		"annotations": []
+	}
+}
