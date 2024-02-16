@@ -1,0 +1,62 @@
+{
+	"name": "DoUntilPipeline",
+	"properties": {
+		"description": "This is an example pipeline to learn about wait activity",
+		"activities": [
+			{
+				"name": "MyUntilActivity",
+				"type": "Until",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals('Failed', coalesce(body('MyUnauthenticatedActivity')?.status, actions('MyUnauthenticatedActivity')?.status, 'null'))",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "MyUnauthenticatedActivity",
+							"type": "WebActivity",
+							"dependsOn": [
+								{
+									"activity": "MyWaitActivity",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"method": "GET",
+								"headers": {
+									"Content-Type": "application/json"
+								},
+								"url": "https://www.fake.com/"
+							}
+						},
+						{
+							"name": "MyWaitActivity",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 1
+							}
+						}
+					],
+					"timeout": "00:00:01"
+				}
+			}
+		],
+		"folder": {
+			"name": "Examples"
+		},
+		"annotations": []
+	}
+}
