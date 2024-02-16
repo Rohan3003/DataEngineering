@@ -17,18 +17,12 @@
 				"typeProperties": {
 					"method": "GET",
 					"url": {
-						"value": "@pipeline().parameters.url_employee",
+						"value": "https://dummy.restapiexample.com/api/v1/employees",
 						"type": "Expression"
 					}
 				}
 			}
 		],
-		"parameters": {
-			"url_employee": {
-				"type": "string",
-				"defaultValue": "https://dummy.restapiexample.com/api/v1/employees"
-			}
-		},
 		"folder": {
 			"name": "General Activity"
 		},
