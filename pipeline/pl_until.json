@@ -1,0 +1,20 @@
+{
+	"name": "pl_until",
+	"properties": {
+		"activities": [
+			{
+				"name": "Until Activity",
+				"type": "Until",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"timeout": "0.00:10:00"
+				}
+			}
+		],
+		"folder": {
+			"name": "Iteration and Conditional Activity"
+		},
+		"annotations": []
+	}
+}
